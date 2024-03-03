@@ -10,7 +10,7 @@ input.addEventListener('input', ({target:{value}})=>{
 })
 
 function renderSearchResult (results) {
-    searchResults.innerHTML= results.map(value=>`<div class='results' style="margin-top:5px">${value}</div>`).join('');
+    searchResults.innerHTML= results.map(value=>`<div class='results' style="margin-top:5px; cursor:pointer">${value}</div>`).join('');
     selectResult()
 }
 
